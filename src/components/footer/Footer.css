@@ -1,0 +1,61 @@
+/* Responsive adjustments for max-width 768px */
+@media (max-width: 768px) {
+    /* Footer container adjustments */
+    .footer {
+      padding: 1rem;
+    }
+  
+    /* Column flex direction adjustments */
+    .footer .container {
+      padding: 0 1rem;
+    }
+  
+    .footer .flex {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer .flex > div {
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  
+    /* Quick Links and Contact Us list adjustments */
+    .footer ul {
+      padding: 0;
+      text-align: left;
+    }
+  
+    .footer ul li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+    }
+  
+    .footer ul li .mr-2 {
+      margin-right: 0.5rem;
+    }
+  
+    /* Adjustments for footer links */
+    .footer .mb-8 {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+  
+    .footer a {
+      display: inline-block;
+      margin: 0.5rem;
+    }
+  
+    /* Adjustments for footer bottom text */
+    .footer p {
+      margin: 0;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  }
+  

@@ -1,0 +1,35 @@
+
+@media (max-width: 768px) {
+    .relative.min-h-screen {
+      padding-top: 56px; /* Space for the fixed header */
+    }
+  
+    .absolute.top-0.left-0.p-4.ml-5 {
+      left: 20%; /* Center horizontally */
+      transform: translateX(-50%);
+      margin-left: 0; /* Remove margin to avoid pushing the link off-screen */
+    }
+  
+    .relative.z-10.text-4xl.mx-28 {
+      font-size: 1.5rem; /* Adjust font size for smaller screens */
+      margin: 0 1rem; /* Adjust margins */
+      padding-top: 16px; /* Adjust padding-top */
+    }
+  
+    .text-lg.mx-36 {
+      flex-direction: column;
+      padding: 0 1rem; /* Adjust padding for smaller screens */
+      margin: 0; /* Remove margin */
+    }
+  
+    .text-justify.text-gray-800.mr-20.w-9\/12 {
+      width: 100%; /* Full width on mobile */
+      margin-right: 0; /* Remove margin */
+    }
+  
+    .pt-2.h-5\/6.w-7\/12.rounded-sm {
+      width: 100%; /* Full width on mobile */
+      height: auto; /* Maintain aspect ratio */
+    }
+  }
+  
