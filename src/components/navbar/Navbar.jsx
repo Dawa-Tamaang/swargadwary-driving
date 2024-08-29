@@ -30,22 +30,22 @@ const Navbar = () => {
         <div className="flex justify-between items-center mx-28">
           <img src="/logo.jpeg" alt="Logo" className="h-10" />
           <nav className="hidden md:flex space-x-6">
-            <NavLink to="/home" className="text-gray-800 hover:text-blue-800 hover:underline" activeClassName="text-blue-800 underline">
+            <NavLink to="/home" className="text-gray-800 font-semibold hover:text-blue-800" activeClassName="text-blue-800 underline">
               HOME
             </NavLink>
-            <NavLink to="/packages" className="text-gray-800 hover:text-blue-800 hover:underline" activeClassName="text-blue-800 underline">
+            <NavLink to="/packages" className="text-gray-800 font-semibold hover:text-blue-800" activeClassName="text-blue-800 underline">
               PACKAGES
             </NavLink>
-            <NavLink to="/instructors" className="text-gray-800 hover:text-blue-800 hover:underline" activeClassName="text-blue-800 underline">
+            {/* <NavLink to="/instructors" className="text-gray-800 font-semibold hover:text-blue-800" activeClassName="text-blue-800 underline">
               INSTRUCTORS
-            </NavLink>
-            <NavLink to="/downloads" className="text-gray-800 hover:text-blue-800 hover:underline" activeClassName="text-blue-800 underline">
+            </NavLink> */}
+            <NavLink to="/downloads" className="text-gray-800 font-semibold hover:text-blue-800" activeClassName="text-blue-800 underline">
               DOWNLOADS
             </NavLink>
-            <NavLink to="/about" className="text-gray-800 hover:text-blue-800 hover:underline" activeClassName="text-blue-800 underline">
+            <NavLink to="/about" className="text-gray-800 font-semibold hover:text-blue-800" activeClassName="text-blue-800 underline">
               ABOUT US
             </NavLink>
-            <NavLink to="/ContactUs" className="text-gray-800 hover:text-blue-800 hover:underline" activeClassName="text-blue-800 underline">
+            <NavLink to="/ContactUs" className="text-gray-800 font-semibold hover:text-blue-800" activeClassName="text-blue-800 underline">
               CONTACT US
             </NavLink>
             {/* <NavLink to="/photos" className="text-gray-800 hover:text-blue-800 hover:underline" activeClassName="text-blue-800 underline">
@@ -69,19 +69,19 @@ const Navbar = () => {
               HOME
             </NavLink>
             
-            <NavLink onClick={toggleMenu} to="/packages" className="text-gray-800 hover:text-blue-800 hover:underline py-2" activeClassName="text-blue-800 underline">
+            <NavLink onClick={toggleMenu} to="/packages" className="text-gray-800 font-semibold hover:text-blue-800 hover:underline py-2" activeClassName="text-blue-800 underline">
               PACKAGES
             </NavLink>
-            <NavLink onClick={toggleMenu} to="/instructors" className="text-gray-800 hover:text-blue-800 hover:underline py-2" activeClassName="text-blue-800 underline">
+            {/* <NavLink onClick={toggleMenu} to="/instructors" className="text-gray-800 font-semibold hover:text-blue-800 hover:underline py-2" activeClassName="text-blue-800 underline">
               INSTRUCTORS
-            </NavLink>
-            <NavLink onClick={toggleMenu} to="/downloads" className="text-gray-800 hover:text-blue-800 hover:underline py-2" activeClassName="text-blue-800 underline">
+            </NavLink> */}
+            <NavLink onClick={toggleMenu} to="/downloads" className="text-gray-800 font-semibold hover:text-blue-800 hover:underline py-2" activeClassName="text-blue-800 underline">
               DOWNLOADS
             </NavLink>
-            <NavLink onClick={toggleMenu} to="/about" className="text-gray-800 hover:text-blue-800 hover:underline py-2" activeClassName="text-blue-800 underline">
+            <NavLink onClick={toggleMenu} to="/about" className="text-gray-800 font-semibold hover:text-blue-800 hover:underline py-2" activeClassName="text-blue-800 underline">
               ABOUT US
             </NavLink>
-            <NavLink onClick={toggleMenu} to="/ContactUs" className="text-gray-800 hover:text-blue-800 hover:underline py-2" activeClassName="text-blue-800 underline">
+            <NavLink onClick={toggleMenu} to="/ContactUs" className="text-gray-800 font-semibold hover:text-blue-800 hover:underline py-2" activeClassName="text-blue-800 underline">
               CONTACT US
             </NavLink>
             {/* <NavLink onClick={toggleMenu} to="/photos" className="text-gray-800 hover:text-blue-800 hover:underline py-2" activeClassName="text-blue-800 underline">

@@ -41,66 +41,61 @@ const Packages = () => {
 
   return (
     <>
-      <div className="relative">
-        <img
-          src="/img2.jpg"
-          alt="Motors Home"
-          className="absolute bg-black inset-0 w-full h-56 object-cover opacity-70"
-        />
-        <div className="absolute top-0 left-0 p-4 ml-5">
-          <Link
-            to="/"
-            className="text-black text-xl font-bold hover:text-white py-2 px-4 flex items-center"
-          >
-            <FontAwesomeIcon icon={faHouse} className="mr-2" />
-            Home
-          </Link>
+      <div className='relative h-[300px] overflow-hidden bg-slate-800 md:p-5'>
+          <div className='absolute inset-0'>
+            <img src="/img2.jpg" alt="" className='h-[300px] w-full object-cover opacity-70' />
+          </div>
+          <div className='relative z-10 mx-auto flex max-w-6xl flex-col items-center justify-center space-y-8 text-center md:px-2'>
+            <h1 className='mt-20 text-5xl font-semibold uppercase leading-tight text-white md:text-6xl'>Packages</h1>
+          </div>
         </div>
-        <div className="relative z-10 sm:text-xl md:text-4xl mx-4 md:mx-28 font-bold flex items-center sm:pt-28 pt-16  text-center px-4">
-          <h1>OUR COURSES</h1>
+        <div className='lg:w-2/3 space-y-5 text-center mx-auto mt-20 mb-10'>
+            <h1 className='text-gray-800 uppercase tracking-widest dark:text-white font-medium text-4xl'>Our Packages</h1>
+            <div className='h-0.5 bg-red-500 w-14 mx-auto'></div>
+            <p className='text-gray-600 dark:text-gray-300 text-base leading-6'>Please review our packages, which are provided below.</p>
         </div>
-      </div>
-      <div className="mx-28 pb-4">
-          <h3 className="sm:text-xl md:text-5xl font-bold font-serif text-center mt-0 sm:pt-28 pt-40 pb-5">OUR PACKAGES</h3>
-          <hr className="w-1/4 border-t-4 border-blue-500 sm:mt-2 mt-0 mb-5 mx-auto" />
-        </div>
-      <div className="container mx-10 sm:mx-auto p-4 h-full w-3/4 sm:p-8 mb-8 grid md:grid-cols-2 sm:grid-cols-1 gap-4 sm:gap-12">
-        {cardData.map((card, index) => (
-          <div
-            key={index}
-            className="max-w-full md:max-w-xl mx-auto bg-gray-200 rounded-lg shadow-xl overflow-hidden"
-          >
-            <div className="md:flex">
-              <div className="md:flex-shrink-0">
-                <img
-                  className="h-48 md:h-56 w-full object-cover"
-                  src={card.image}
-                  alt={card.title}
-                />
-              </div>
-              <div className="p-4 md:p-6">
-                <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
-                  {card.head}
-                </div>
-                <h2 className="block mt-1 text-lg leading-tight font-medium text-black">
-                  {card.title}
-                </h2>
-                <p className="mt-2 text-gray-500">
-                  {card.description.substring(0, 80)}...
-                </p>
-                <Link
-                  to={card.link}
-                  className="mt-4 inline-block text-indigo-500 hover:text-indigo-800"
-                >
-                  <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded mt-4 hover:bg-blue-700">
-                    Detail
-                  </button>
-                </Link>
+        <div className="flex flex-col px-10 mb-10">
+          <div className="overflow-x-auto sm:-mx-6 lg:-mx-8 ">
+            <div className="inline-block min-w-full sm:px-6 lg:px-8">
+              <div className="overflow-hidden">
+                <table className="min-w-full text-left text-sm font-light">
+                  <thead className="border-b font-medium dark:border-neutral-500">
+                    <tr>
+                      <th scope="col" className="px-6 py-4">S.N</th>
+                      <th scope="col" className="px-6 py-4">Car/Jeep</th>
+                      <th scope="col" className="px-6 py-4">Price</th>
+                      <th scope="col" className="px-6 py-4">Bike/Scooter</th>
+                      <th scope="col" className="px-6 py-4">Price</th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b dark:border-neutral-500">
+                      <td className="whitespace-nowrap px-6 py-4 font-medium">1</td>
+                      <td className="whitespace-nowrap px-6 py-4">30 Days Package</td>
+                      <td className="whitespace-nowrap px-6 py-4">Rs. 15,000</td>
+                      <td className="whitespace-nowrap px-6 py-4">Full Package</td>
+                      <td className="whitespace-nowrap px-6 py-4">Rs. 8,000</td>
+                    </tr>
+                    <tr className="border-b dark:border-neutral-500">
+                      <td className="whitespace-nowrap px-6 py-4 font-medium">2</td>
+                      <td className="whitespace-nowrap px-6 py-4">15 Days Package</td>
+                      <td className="whitespace-nowrap px-6 py-4">Rs. 8,000</td>
+                      <td className="whitespace-nowrap px-6 py-4">Per Day</td>
+                      <td className="whitespace-nowrap px-6 py-4">Rs. 500</td>
+                    </tr>
+                    <tr className="border-b dark:border-neutral-500">
+                      <td className="whitespace-nowrap px-6 py-4 font-medium">3</td>
+                      <td className="whitespace-nowrap px-6 py-4">7 Days Package</td>
+                      <td className="whitespace-nowrap px-6 py-4">Rs. 4,000</td>
+                    </tr>
+                    
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
-        ))}
-      </div>
+        </div>
     </>
   );
 };
